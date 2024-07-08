@@ -1,5 +1,5 @@
 export default function Index() {
     return (
-        <div>project2 index</div>
+        <main>project2 index</main>
     )
 }
