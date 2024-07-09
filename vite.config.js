@@ -11,6 +11,8 @@ export default defineConfig(({ command, mode }) => {
         throw new Error("Please specify a project with PROJECT environment variable");
     }
 
+    console.log("xxx", resolve(__dirname, 'src/assets'))
+
     return {
         plugins: [react()],
         root: resolve(__dirname, `src/modules/${project}`),
@@ -24,7 +26,7 @@ export default defineConfig(({ command, mode }) => {
         },
         resolve: {
             alias: {
-                '@assets': resolve(__dirname, '/src/assets'),
+                '@assets': resolve(__dirname, 'src/assets'),
                 '@components': resolve(__dirname, 'src/components'),
                 '@utils': resolve(__dirname, 'src/utils'),
             }
