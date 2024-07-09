@@ -11,8 +11,6 @@ export default defineConfig(({ command, mode }) => {
         throw new Error("Please specify a project with PROJECT environment variable");
     }
 
-    console.log("xxx", resolve(__dirname, 'src/assets'))
-
     return {
         plugins: [react()],
         root: resolve(__dirname, `src/modules/${project}`),
